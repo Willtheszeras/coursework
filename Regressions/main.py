@@ -1,9 +1,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import PolarCoordinates as pc
 #points = [(1,0), (2,0), (3,0), (4,0), (5,0), (6,0), (7,0)]
-x = [1,2,3,4,5,6,7]
+
+
+inputData = [(10,np.pi),(10,1),(5,np.pi*3/4),(2,-2),(15,3),(10,2),(5,0)]
+origin = (0,1)
+
+
+
+x = []
+y = []
+for i in inputData:
+    out = pc.convert(i, origin)
+    x.append(out[0])
+    y.append(out[1])
 x_ = np.mean(x)
-y = [-1,-2,-3,-3,-5,-6,-8]
 y_ = np.mean(y)
 m = 0
 c = 0
@@ -27,6 +39,7 @@ fig, ax = plt.subplots()
 
 ax.scatter(x,y)
 ax.plot([min, max],[m*min + c, m*max + c])
+ax.scatter(origin[0], origin[1])
 
 
 m = np.sum(x - np.mean(x))
