@@ -12,7 +12,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if not data:
             break
         #print(f"Received {data}")
-        trans.inputData.append(data)
+        trans.inputData.append(bin(int.from_bytes(data)))
 
 #main.plot()
 trans.output()
