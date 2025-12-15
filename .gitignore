@@ -53,3 +53,4 @@ Unity_project/Coursework/.vsconfig
 Unity_project/Coursework/Output.docx
 Unity_project/Coursework/ignore.conf
 
+*.pyc

@@ -5,7 +5,7 @@ using System;
 public class Reader : MonoBehaviour
 {
 
-    StreamReader reader = new StreamReader("C:\\Users\\willt\\Documents\\Unity project (MAY BREAK)\\Coursework\\Assets\\Harvested_data3.txt");
+    StreamReader reader = new StreamReader("C:\\Users\\willt\\Documents\\coursework_code\\Unity_project\\Coursework\\Assets\\Harvested_data3.txt");
     string raw;
     public Translator trans;
     public Plotter plt;

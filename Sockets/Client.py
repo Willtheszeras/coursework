@@ -2,7 +2,7 @@ import socket
 #import Regressions.main as main
 import Translator as trans
 
-HOST = "192.168.137.167"
+HOST = "192.168.137.40"
 #HOST = "192.168.4.1"
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
